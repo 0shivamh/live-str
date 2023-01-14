@@ -4,8 +4,8 @@ import Peer from 'simple-peer';
 
 const SocketContext = createContext();
 
-const socket = io('http://localhost:5001');
-// const socket = io('https://api-cwify.cwipedia.com');
+// const socket = io('http://localhost:5001');
+const socket = io('https://api-cwify.cwipedia.com');
 
 const ContextProvider = ({ children }) => {
   const [callAccepted, setCallAccepted] = useState(false);
